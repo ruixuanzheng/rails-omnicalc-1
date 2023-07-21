@@ -31,7 +31,16 @@ class ZebraController < ApplicationController
     render({:template => "game_templates/payment_results"})
   end
 
+  def puppy
+    render({:template => "game_templates/random"})
+  end
 
+  def puppy2
+    @mini = params.fetch("mini").to_f
+    @maxi = params.fetch("maxi").to_f
+    @random = rand(@mini..@maxi)
+    render({:template => "game_templates/random_results"})
+  end
 
 
 end

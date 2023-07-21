@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   
   get("/payment/new", {:controller => "zebra", :action => "lion"})
   get("/payment/results", {:controller => "zebra", :action => "lion2"})
+
+  get("/random/new", {:controller => "zebra", :action => "puppy"})
+  get("/random/results", {:controller => "zebra", :action => "puppy2"})
   
   # get("/", {:controller => "zebra", :action => "rabbit"})
 
