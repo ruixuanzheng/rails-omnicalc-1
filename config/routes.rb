@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   get("/payment/new", {:controller => "zebra", :action => "lion"})
   get("/payment/results", {:controller => "zebra", :action => "lion2"})
   
-  get("/", {:controller => "zebra", :action => "rabbit"})
+  # get("/", {:controller => "zebra", :action => "rabbit"})
 
 end
